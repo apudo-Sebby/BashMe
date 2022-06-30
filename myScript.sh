@@ -27,9 +27,20 @@ NAME="Kanindo"
 # fi
 
 # IF-ELSE
+# if [ "${NAME}" == "Sebby" ]
+# then
+#     echo "Your name is Sebby"
+# else
+#     echo "Your name is NOT Sebby"
+# fi
+
+# ELSE-IF (elif)
 if [ "${NAME}" == "Sebby" ]
 then
     echo "Your name is Sebby"
+elif [ "${NAME}" == "Junior" ]
+then
+    echo "Your name is neither Junior"
 else
-    echo "Your name is NOT Sebby"
+    echo "Your name is NOT Sebby nor Junior"
 fi
