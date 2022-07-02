@@ -69,13 +69,13 @@ NAME="Kanindo"
 #######
 
 # FILE CONDITIONS
-FILE="test.txt"
-if [ -e "${FILE}" ]
-then 
-    echo "$FILE does exist"
-else
-    echo "$FILE does NOT exist"
-fi
+# FILE="test.txt"
+# if [ -e "${FILE}" ]
+# then 
+#     echo "$FILE does exist"
+# else
+#     echo "$FILE does NOT exist"
+# fi
 
 
 ########
@@ -90,3 +90,20 @@ fi
 # -x    True if the file is executable
 
 ########
+
+
+# CASE STATEMENT
+
+read -p "Are you 21 years or older? Y/N: " ANSWER
+case "${ANSWER}" in
+  [yY] | [yY][eE][sS])
+    echo "You can have a beer :)"
+    ;;
+  [nN] | [nN][oO])
+    echo "Sorry man, no drinking for you"
+    ;;
+  *)
+    echo "Please enter y/yes or n/no"
+    ;;
+esac
+
