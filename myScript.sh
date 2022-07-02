@@ -125,9 +125,32 @@
 # done
 
 # WHILE LOOP - READING THROUGH A FILE LINE BY LINE
-LINE=1
-while read -r CURRENT_LINE
-    do
-        echo "$LINE: $CURRENT_LINE"
-        ((LINE++))
-done < "./new-1.txt"
+# LINE=1
+# while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done < "./new-1.txt"
+
+# FUNCTIONS 
+
+# function sayHello() {
+#     echo "Hello world"
+# }
+
+# sayHello
+
+# FUNCTION WITH PARAMS AND ARGS
+
+# function greet() {
+#     echo "Hello I am $1 and I am $2"
+# }
+
+# greet "Sebby" "21"
+
+# CREATE FOLDER AND WRITE TO A FILE
+
+mkdir hello
+touch "hello/world.txt"
+echo "hello world!" >> "hello/world.txt"
+echo "Created hello/world.txt"
