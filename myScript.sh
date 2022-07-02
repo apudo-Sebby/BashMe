@@ -8,7 +8,7 @@
 # Uppercase by Convention
 # Letters, numbers & Underscores
 
-NAME="Kanindo"
+# NAME="Kanindo"
 # echo "My name is $NAME"
 # There is also this syntax that is kinda like a javaScript literal Variable
 # echo "My name is ${NAME}"
@@ -94,16 +94,32 @@ NAME="Kanindo"
 
 # CASE STATEMENT
 
-read -p "Are you 21 years or older? Y/N: " ANSWER
-case "${ANSWER}" in
-  [yY] | [yY][eE][sS])
-    echo "You can have a beer :)"
-    ;;
-  [nN] | [nN][oO])
-    echo "Sorry man, no drinking for you"
-    ;;
-  *)
-    echo "Please enter y/yes or n/no"
-    ;;
-esac
+# read -p "Are you 21 years or older? Y/N: " ANSWER
+# case "${ANSWER}" in
+#   [yY] | [yY][eE][sS])
+#     echo "You can have a beer :)"
+#     ;;
+#   [nN] | [nN][oO])
+#     echo "Sorry man, no drinking for you"
+#     ;;
+#   *)
+#     echo "Please enter y/yes or n/no"
+#     ;;
+# esac
 
+# A SIMPLE FOR LOOP
+# NAMES="Sebby Njenga Jasto Musau"
+# for NAME in ${NAMES}
+#     do
+#         echo "Hello ${NAME}"
+# done
+
+# FOR LOOP TO RENAME FILES
+
+FILES=$(ls *.txt)
+NEW="new"
+for FILE in ${FILES}
+    do
+        echo "Renaming ${FILE} to new-${FILE}"
+        mv ${FILE} ${NEW}-${FILE}
+done
